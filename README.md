@@ -22,3 +22,11 @@ You should now be inside the virtual environment and can download the required l
 ```shell
 pip install -r requirements.txt
 ```
+
+### Starting the client server
+
+Run the following command and the client will be available at http://127.0.0.1:8000:
+
+```shell
+python client/manage.py run server
+```
