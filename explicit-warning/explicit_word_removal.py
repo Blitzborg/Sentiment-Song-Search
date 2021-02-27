@@ -10,17 +10,23 @@ Original file is located at
 from nltk.corpus import stopwords  
 from nltk.tokenize import word_tokenize  
 from nltk.tokenize import RegexpTokenizer
+import nltk
 import re 
 import os
 
-nltk.download('stopwords')
-nltk.download('punkt')
+def setup():
+    nltk.download('stopwords')
+    nltk.download('punkt')
 
-tokenizer = RegexpTokenizer(r'\w+')
-stop_words = set(stopwords.words('english'))
+    tokenizer = RegexpTokenizer(r'\w+')
+    stop_words = set(stopwords.words('english'))
+
+    !git clone https://github.com/areebbeigh/profanityfilter.git
+    return 
 
 def tokenise(corpus):
   filtered_sentence = [] 
+  corpus = corpus.lower()
   word_tokens = tokenizer.tokenize(corpus) 
   filtered_sentence = [w for w in word_tokens if not w in stop_words]  
   return filtered_sentence
@@ -53,26 +59,33 @@ def load_corpus(path):
     tot += str(wordlist)
     return tot
 
-corpus = load_corpus('/content/look_at_me_now.txt')
-word_list = initialize('/content/wordlist.txt')
-words = tokenise(corpus)
 
-map = map_book(words)
-explicit_count = 0
-explicit_word = {}
-for word in word_list:
-    try:
-          explicit_count +=map[word]
-          # print('Word: [' + word + '] Frequency: ' + str(map[word]))
-          print("Explicit Count: "+ str(explicit_count))
-          explicit_word[word] = map[word]
-    except:
-          continue
-print(explicit_word)
+def generate_rating(corpus):
+  word_list = initialize(os.curdir + '/profanityfilter/profanityfilter/data/badwords.txt')
+  words = tokenise(corpus)
 
-values = map.values()
-tot = sum(values)
-exp_values = explicit_word.values()
-exp_tot = sum(exp_values)
+  map = map_book(words)
+  explicit_count = 0
+  explicit_word = {}
+  for word in word_list:
+      try:
+            explicit_count +=map[word]
+            # print('Word: [' + word + '] Frequency: ' + str(map[word]))
+            print("Explicit Count: "+ str(explicit_count))
+            explicit_word[word] = map[word]
+      except:
+            continue
+  print(explicit_word)
+  tot = sum(map.values())
+
+
+  exp_tot = sum(explicit_word.values())
+
+  return (tot, exp_tot)
+
+setup()
+corpus = load_corpus(os.curdir + '/look_at_me_now.txt')
+(tot, exp_tot) = generate_rating(corpus)
+
 print("Explicit Rating: "+ str(exp_tot/tot * 400 ) if  (exp_tot/tot * 400 < 100) else str(100.00) + '%')
 
