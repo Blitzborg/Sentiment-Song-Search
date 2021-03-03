@@ -20,6 +20,8 @@ bin/solr status
 
 To access the Solr admin dashboard, visit [http://localhost:8983/solr](http://localhost:8983/solr)
 
+Now queries to the database can be made by first selecting __Core Selector > songs__ and then clicking on the __Query__ tab.
+
 ## Client
 
 ### Setup

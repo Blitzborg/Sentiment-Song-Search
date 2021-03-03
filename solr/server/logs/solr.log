@@ -95,3 +95,24 @@
 2021-03-03 06:16:45.889 INFO  (qtp949767857-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1614751921351} status=0 QTime=9
 2021-03-03 06:16:47.343 INFO  (qtp949767857-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=*:*&_=1614752205841} hits=11326 status=0 QTime=76
 2021-03-03 06:16:51.881 INFO  (qtp949767857-23) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=blues&_=1614752205841} hits=602 status=0 QTime=31
+2021-03-03 06:18:27.903 INFO  (qtp949767857-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1614752307687} status=0 QTime=0
+2021-03-03 06:18:27.916 INFO  (qtp949767857-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1614752307688} status=0 QTime=6
+2021-03-03 06:18:29.208 INFO  (qtp949767857-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=*:*&_=1614752307845} hits=11326 status=0 QTime=4
+2021-03-03 06:18:33.371 INFO  (qtp949767857-23) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=billy&_=1614752307845} hits=302 status=0 QTime=3
+2021-03-03 06:22:01.030 INFO  (qtp949767857-23) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=6d63893a-8e56-4663-bca2-83504c24f85e&_=1614752307845} hits=6 status=0 QTime=18
+2021-03-03 06:22:07.172 INFO  (qtp949767857-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=name&_=1614752307845} hits=2910 status=0 QTime=4
+2021-03-03 06:22:10.210 INFO  (qtp949767857-23) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=laksh&_=1614752307845} hits=0 status=0 QTime=1
+2021-03-03 06:22:12.991 INFO  (qtp949767857-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=name&_=1614752307845} hits=2910 status=0 QTime=0
+2021-03-03 06:25:07.740 INFO  (qtp949767857-19) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=0.9998&_=1614752307845} hits=284 status=0 QTime=2
+2021-03-03 06:27:10.201 INFO  (qtp949767857-23) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=*:*&_=1614752307845} hits=11326 status=0 QTime=0
+2021-03-03 06:28:08.877 INFO  (qtp949767857-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1614752307687} status=0 QTime=0
+2021-03-03 06:28:08.886 INFO  (qtp949767857-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1614752307688} status=0 QTime=4
+2021-03-03 06:28:08.894 INFO  (qtp949767857-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1614752307688} status=0 QTime=4
+2021-03-03 06:28:42.988 INFO  (qtp949767857-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1614752307687} status=0 QTime=0
+2021-03-03 06:28:43.003 INFO  (qtp949767857-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1614752307688} status=0 QTime=6
+2021-03-03 06:28:43.003 INFO  (qtp949767857-41) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1614752922964} status=0 QTime=1
+2021-03-03 06:28:43.026 INFO  (qtp949767857-19) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1614752307688&ts=1614752307688} status=503 QTime=3
+2021-03-03 06:28:43.028 INFO  (qtp949767857-23) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/system params={wt=json&_=1614752922964} status=0 QTime=10
+2021-03-03 06:28:43.029 INFO  (qtp949767857-41) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/replication params={wt=json&command=details&_=1614752922965} status=0 QTime=9
+2021-03-03 06:28:45.324 INFO  (qtp949767857-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1614752307687} status=0 QTime=0
+2021-03-03 06:28:45.334 INFO  (qtp949767857-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1614752307688} status=0 QTime=4
