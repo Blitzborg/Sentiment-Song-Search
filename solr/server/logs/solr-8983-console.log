@@ -1,0 +1,13 @@
+Java HotSpot(TM) 64-Bit Server VM warning: -XX:+UseLargePages not supported in this VM
+2021-03-03 06:07:20.376 INFO  (main) [   ] o.e.j.u.log Logging initialized @6718ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-03-03 06:07:20.650 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 14.0.2+12-46
+2021-03-03 06:07:20.676 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/contexts/] at interval 0
+2021-03-03 06:07:21.079 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-03-03 06:07:21.097 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-03-03 06:07:21.097 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-03-03 06:07:21.105 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2021-03-03 06:07:21.218 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-03 06:07:21.227 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.8.1
+2021-03-03 06:07:21.228 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2021-03-03 06:07:21.228 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr
+2021-03-03 06:07:21.228 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-03-03T06:07:21.228709Z
