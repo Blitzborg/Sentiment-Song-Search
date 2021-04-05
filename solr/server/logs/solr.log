@@ -65,3 +65,276 @@
 2021-04-05 17:24:51.614 INFO  (qtp659590237-22) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1617643491552} status=0 QTime=32
 2021-04-05 17:24:51.617 INFO  (qtp659590237-23) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/replication params={wt=json&command=details&_=1617643491553} status=0 QTime=34
 2021-04-05 17:24:51.623 INFO  (qtp659590237-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1617643343686} status=0 QTime=43
+2021-04-05 17:27:47.211 INFO  (qtp659590237-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1617643343683} status=0 QTime=0
+2021-04-05 17:27:47.214 INFO  (qtp659590237-40) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/file params={wt=json&_=1617643667190} status=0 QTime=1
+2021-04-05 17:27:47.216 INFO  (qtp659590237-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1617643343686} status=0 QTime=4
+2021-04-05 17:27:47.324 INFO  (qtp659590237-23) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1617643667190} status=0 QTime=2
+2021-04-05 17:27:48.102 INFO  (qtp659590237-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1617643343683} status=0 QTime=0
+2021-04-05 17:27:48.116 INFO  (qtp659590237-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1617643343686} status=0 QTime=4
+2021-04-05 17:27:48.126 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1617643491552} status=0 QTime=11
+2021-04-05 17:27:48.130 INFO  (qtp659590237-23) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/config params={wt=json&_=1617643668076} status=0 QTime=4
+2021-04-05 17:27:48.403 INFO  (qtp659590237-19) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1617643491552} status=0 QTime=0
+2021-04-05 17:29:42.763 INFO  (qtp659590237-25) [   x:songs] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/conf/managed-schema
+2021-04-05 17:29:42.775 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-04-05 17:29:42.832 INFO  (qtp659590237-25) [   x:songs] o.a.s.s.IndexSchema Schema name=default-config
+2021-04-05 17:29:42.843 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-04-05 17:29:42.843 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-04-05 17:29:42.843 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-04-05 17:29:42.843 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-04-05 17:29:42.843 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-04-05 17:29:42.887 INFO  (qtp659590237-25) [   x:songs] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-04-05 17:29:42.942 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.CoreContainer Reloading SolrCore 'songs' using configuration from instancedir /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs
+2021-04-05 17:29:43.041 INFO  (qtp659590237-25) [   x:songs] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.songs' (registry 'solr.core.songs') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6e9175d8
+2021-04-05 17:29:43.041 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.SolrCore [[songs] ] Opening new SolrCore at [/Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs], dataDir=[/Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/data/]
+2021-04-05 17:29:48.197 INFO  (qtp659590237-25) [   x:songs] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-04-05 17:29:48.198 INFO  (qtp659590237-25) [   x:songs] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-04-05 17:29:48.203 INFO  (qtp659590237-25) [   x:songs] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/conf
+2021-04-05 17:29:48.203 INFO  (qtp659590237-25) [   x:songs] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-04-05 17:29:48.204 INFO  (qtp659590237-25) [   x:songs] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-04-05 17:29:48.205 INFO  (qtp659590237-25) [   x:songs] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-04-05 17:29:48.206 INFO  (qtp659590237-25) [   x:songs] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1696222452861894656
+2021-04-05 17:29:48.210 INFO  (searcherExecutor-21-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-05 17:29:48.211 INFO  (searcherExecutor-21-thread-1-processing-x:songs) [   x:songs] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-04-05 17:29:48.215 INFO  (qtp659590237-25) [   x:songs] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-04-05 17:29:48.220 INFO  (searcherExecutor-21-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 0 ms
+2021-04-05 17:29:48.224 INFO  (qtp659590237-25) [   ] o.a.s.c.S.Request [songs]  webapp=/solr path=/schema params={wt=json&_=1617643668076} status=0 QTime=5526
+2021-04-05 17:29:48.225 INFO  (qtp659590237-25) [   ] o.a.s.c.SolrCore [songs]  CLOSING SolrCore org.apache.solr.core.SolrCore@58d7361c
+2021-04-05 17:29:48.225 INFO  (qtp659590237-25) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.songs tag=SolrCore@58d7361c
+2021-04-05 17:29:48.226 INFO  (qtp659590237-25) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@78ef454c: rootName = null, domain = solr.core.songs, service url = null, agent id = null] for registry solr.core.songs/com.codahale.metrics.MetricRegistry@4ce70efb
+2021-04-05 17:29:48.231 INFO  (searcherExecutor-21-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-05 17:29:48.236 INFO  (searcherExecutor-21-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 7 ms
+2021-04-05 17:29:49.775 INFO  (qtp659590237-20) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/config params={wt=json&_=1617643668076} status=0 QTime=1
+2021-04-05 17:29:49.776 INFO  (qtp659590237-19) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1617643491552} status=0 QTime=6
+2021-04-05 17:29:49.820 INFO  (qtp659590237-17) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1617643491552} status=0 QTime=0
+2021-04-05 17:30:12.565 INFO  (qtp659590237-19) [   x:songs] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/conf/managed-schema
+2021-04-05 17:30:12.579 INFO  (qtp659590237-19) [   x:songs] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-04-05 17:30:12.616 INFO  (qtp659590237-19) [   x:songs] o.a.s.s.IndexSchema Schema name=default-config
+2021-04-05 17:30:12.628 WARN  (qtp659590237-19) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-04-05 17:30:12.628 WARN  (qtp659590237-19) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-04-05 17:30:12.628 WARN  (qtp659590237-19) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-04-05 17:30:12.628 WARN  (qtp659590237-19) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-04-05 17:30:12.628 WARN  (qtp659590237-19) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-04-05 17:30:12.653 INFO  (qtp659590237-19) [   x:songs] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-04-05 17:30:12.675 INFO  (qtp659590237-19) [   x:songs] o.a.s.c.CoreContainer Reloading SolrCore 'songs' using configuration from instancedir /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs
+2021-04-05 17:30:12.691 INFO  (qtp659590237-19) [   x:songs] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.songs' (registry 'solr.core.songs') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6e9175d8
+2021-04-05 17:30:12.691 INFO  (qtp659590237-19) [   x:songs] o.a.s.c.SolrCore [[songs] ] Opening new SolrCore at [/Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs], dataDir=[/Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/data/]
+2021-04-05 17:30:17.749 INFO  (qtp659590237-19) [   x:songs] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-04-05 17:30:17.749 INFO  (qtp659590237-19) [   x:songs] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-04-05 17:30:17.753 INFO  (qtp659590237-19) [   x:songs] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/conf
+2021-04-05 17:30:17.754 INFO  (qtp659590237-19) [   x:songs] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-04-05 17:30:17.754 INFO  (qtp659590237-19) [   x:songs] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-04-05 17:30:17.755 INFO  (qtp659590237-19) [   x:songs] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-04-05 17:30:17.756 INFO  (qtp659590237-19) [   x:songs] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1696222483847315456
+2021-04-05 17:30:17.761 INFO  (searcherExecutor-26-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-05 17:30:17.761 INFO  (searcherExecutor-26-thread-1-processing-x:songs) [   x:songs] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-04-05 17:30:17.765 INFO  (qtp659590237-19) [   x:songs] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-04-05 17:30:17.767 INFO  (searcherExecutor-26-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 0 ms
+2021-04-05 17:30:17.769 INFO  (qtp659590237-19) [   ] o.a.s.c.S.Request [songs]  webapp=/solr path=/schema params={wt=json&_=1617643668076} status=0 QTime=5246
+2021-04-05 17:30:17.769 INFO  (searcherExecutor-26-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-05 17:30:17.769 INFO  (qtp659590237-19) [   ] o.a.s.c.SolrCore [songs]  CLOSING SolrCore org.apache.solr.core.SolrCore@671b7c8
+2021-04-05 17:30:17.770 INFO  (qtp659590237-19) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.songs tag=SolrCore@671b7c8
+2021-04-05 17:30:17.770 INFO  (qtp659590237-19) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@632dc255: rootName = null, domain = solr.core.songs, service url = null, agent id = null] for registry solr.core.songs/com.codahale.metrics.MetricRegistry@4ce70efb
+2021-04-05 17:30:17.774 INFO  (searcherExecutor-26-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 0 ms
+2021-04-05 17:30:19.305 INFO  (qtp659590237-17) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1617643491552} status=0 QTime=4
+2021-04-05 17:30:19.308 INFO  (qtp659590237-22) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/config params={wt=json&_=1617643668076} status=0 QTime=0
+2021-04-05 17:30:19.347 INFO  (qtp659590237-19) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1617643491552} status=0 QTime=0
+2021-04-05 17:30:21.045 INFO  (qtp659590237-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1617643343683} status=0 QTime=0
+2021-04-05 17:30:21.055 INFO  (qtp659590237-22) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/replication params={wt=json&command=details&_=1617643491553} status=0 QTime=1
+2021-04-05 17:30:21.059 INFO  (qtp659590237-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1617643343686} status=0 QTime=6
+2021-04-05 17:30:21.594 INFO  (qtp659590237-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1617643343683} status=0 QTime=0
+2021-04-05 17:30:21.599 INFO  (qtp659590237-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1617643343686} status=0 QTime=4
+2021-04-05 17:30:21.602 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1617643491552} status=0 QTime=1
+2021-04-05 17:30:21.606 INFO  (qtp659590237-21) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/config params={wt=json&_=1617643668076} status=0 QTime=0
+2021-04-05 17:30:21.734 INFO  (qtp659590237-24) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1617643491552} status=0 QTime=0
+2021-04-05 17:30:50.652 INFO  (qtp659590237-25) [   x:songs] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/conf/managed-schema
+2021-04-05 17:30:50.660 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-04-05 17:30:50.692 INFO  (qtp659590237-25) [   x:songs] o.a.s.s.IndexSchema Schema name=default-config
+2021-04-05 17:30:50.705 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-04-05 17:30:50.705 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-04-05 17:30:50.705 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-04-05 17:30:50.705 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-04-05 17:30:50.705 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-04-05 17:30:50.727 INFO  (qtp659590237-25) [   x:songs] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-04-05 17:30:50.741 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.CoreContainer Reloading SolrCore 'songs' using configuration from instancedir /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs
+2021-04-05 17:30:50.755 INFO  (qtp659590237-25) [   x:songs] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.songs' (registry 'solr.core.songs') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6e9175d8
+2021-04-05 17:30:50.755 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.SolrCore [[songs] ] Opening new SolrCore at [/Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs], dataDir=[/Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/data/]
+2021-04-05 17:30:55.817 INFO  (qtp659590237-25) [   x:songs] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-04-05 17:30:55.817 INFO  (qtp659590237-25) [   x:songs] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-04-05 17:30:55.821 INFO  (qtp659590237-25) [   x:songs] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/conf
+2021-04-05 17:30:55.822 INFO  (qtp659590237-25) [   x:songs] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-04-05 17:30:55.822 INFO  (qtp659590237-25) [   x:songs] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-04-05 17:30:55.823 INFO  (qtp659590237-25) [   x:songs] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-04-05 17:30:55.824 INFO  (qtp659590237-25) [   x:songs] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1696222523764506624
+2021-04-05 17:30:55.827 INFO  (searcherExecutor-31-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-05 17:30:55.827 INFO  (searcherExecutor-31-thread-1-processing-x:songs) [   x:songs] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-04-05 17:30:55.830 INFO  (searcherExecutor-31-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 0 ms
+2021-04-05 17:30:55.834 INFO  (qtp659590237-25) [   x:songs] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-04-05 17:30:55.836 INFO  (searcherExecutor-31-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-05 17:30:55.838 INFO  (qtp659590237-25) [   ] o.a.s.c.S.Request [songs]  webapp=/solr path=/schema params={wt=json&_=1617643668076} status=0 QTime=5217
+2021-04-05 17:30:55.838 INFO  (qtp659590237-25) [   ] o.a.s.c.SolrCore [songs]  CLOSING SolrCore org.apache.solr.core.SolrCore@5f35433
+2021-04-05 17:30:55.838 INFO  (qtp659590237-25) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.songs tag=SolrCore@5f35433
+2021-04-05 17:30:55.838 INFO  (qtp659590237-25) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@675d9649: rootName = null, domain = solr.core.songs, service url = null, agent id = null] for registry solr.core.songs/com.codahale.metrics.MetricRegistry@4ce70efb
+2021-04-05 17:30:55.842 INFO  (searcherExecutor-31-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 0 ms
+2021-04-05 17:30:57.371 INFO  (qtp659590237-17) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/config params={wt=json&_=1617643668076} status=0 QTime=0
+2021-04-05 17:30:57.375 INFO  (qtp659590237-24) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1617643491552} status=0 QTime=5
+2021-04-05 17:30:57.399 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1617643491552} status=0 QTime=0
+2021-04-05 17:31:44.466 INFO  (qtp659590237-24) [   x:songs] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/conf/managed-schema
+2021-04-05 17:31:44.479 INFO  (qtp659590237-24) [   x:songs] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-04-05 17:31:44.522 INFO  (qtp659590237-24) [   x:songs] o.a.s.s.IndexSchema Schema name=default-config
+2021-04-05 17:31:44.531 WARN  (qtp659590237-24) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-04-05 17:31:44.531 WARN  (qtp659590237-24) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-04-05 17:31:44.531 WARN  (qtp659590237-24) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-04-05 17:31:44.531 WARN  (qtp659590237-24) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-04-05 17:31:44.531 WARN  (qtp659590237-24) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-04-05 17:31:44.556 INFO  (qtp659590237-24) [   x:songs] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-04-05 17:31:44.593 INFO  (qtp659590237-24) [   x:songs] o.a.s.c.CoreContainer Reloading SolrCore 'songs' using configuration from instancedir /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs
+2021-04-05 17:31:44.616 INFO  (qtp659590237-24) [   x:songs] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.songs' (registry 'solr.core.songs') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6e9175d8
+2021-04-05 17:31:44.616 INFO  (qtp659590237-24) [   x:songs] o.a.s.c.SolrCore [[songs] ] Opening new SolrCore at [/Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs], dataDir=[/Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/data/]
+2021-04-05 17:31:49.712 INFO  (qtp659590237-24) [   x:songs] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-04-05 17:31:49.712 INFO  (qtp659590237-24) [   x:songs] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-04-05 17:31:49.730 INFO  (qtp659590237-24) [   x:songs] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/conf
+2021-04-05 17:31:49.730 INFO  (qtp659590237-24) [   x:songs] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-04-05 17:31:49.730 INFO  (qtp659590237-24) [   x:songs] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-04-05 17:31:49.732 INFO  (qtp659590237-24) [   x:songs] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-04-05 17:31:49.732 INFO  (qtp659590237-24) [   x:songs] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1696222580291141632
+2021-04-05 17:31:49.754 INFO  (searcherExecutor-36-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-05 17:31:49.754 INFO  (searcherExecutor-36-thread-1-processing-x:songs) [   x:songs] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-04-05 17:31:49.758 INFO  (searcherExecutor-36-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 0 ms
+2021-04-05 17:31:49.810 INFO  (qtp659590237-24) [   x:songs] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-04-05 17:31:49.812 INFO  (qtp659590237-24) [   ] o.a.s.c.S.Request [songs]  webapp=/solr path=/schema params={wt=json&_=1617643668076} status=0 QTime=5390
+2021-04-05 17:31:49.812 INFO  (searcherExecutor-36-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-05 17:31:49.813 INFO  (qtp659590237-24) [   ] o.a.s.c.SolrCore [songs]  CLOSING SolrCore org.apache.solr.core.SolrCore@24bc0b9e
+2021-04-05 17:31:49.813 INFO  (qtp659590237-24) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.songs tag=SolrCore@24bc0b9e
+2021-04-05 17:31:49.813 INFO  (qtp659590237-24) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2ea55793: rootName = null, domain = solr.core.songs, service url = null, agent id = null] for registry solr.core.songs/com.codahale.metrics.MetricRegistry@4ce70efb
+2021-04-05 17:31:49.823 INFO  (searcherExecutor-36-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 0 ms
+2021-04-05 17:31:51.348 INFO  (qtp659590237-21) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/config params={wt=json&_=1617643668076} status=0 QTime=0
+2021-04-05 17:31:51.351 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1617643491552} status=0 QTime=2
+2021-04-05 17:31:51.373 INFO  (qtp659590237-24) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1617643491552} status=0 QTime=0
+2021-04-05 17:32:24.701 INFO  (qtp659590237-25) [   x:songs] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/conf/managed-schema
+2021-04-05 17:32:24.708 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-04-05 17:32:24.762 INFO  (qtp659590237-25) [   x:songs] o.a.s.s.IndexSchema Schema name=default-config
+2021-04-05 17:32:24.768 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-04-05 17:32:24.768 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-04-05 17:32:24.768 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-04-05 17:32:24.769 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-04-05 17:32:24.769 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-04-05 17:32:24.789 INFO  (qtp659590237-25) [   x:songs] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-04-05 17:32:24.803 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.CoreContainer Reloading SolrCore 'songs' using configuration from instancedir /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs
+2021-04-05 17:32:24.816 INFO  (qtp659590237-25) [   x:songs] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.songs' (registry 'solr.core.songs') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6e9175d8
+2021-04-05 17:32:24.816 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.SolrCore [[songs] ] Opening new SolrCore at [/Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs], dataDir=[/Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/data/]
+2021-04-05 17:32:29.869 INFO  (qtp659590237-25) [   x:songs] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-04-05 17:32:29.869 INFO  (qtp659590237-25) [   x:songs] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-04-05 17:32:29.876 INFO  (qtp659590237-25) [   x:songs] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/conf
+2021-04-05 17:32:29.877 INFO  (qtp659590237-25) [   x:songs] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-04-05 17:32:29.877 INFO  (qtp659590237-25) [   x:songs] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-04-05 17:32:29.879 INFO  (qtp659590237-25) [   x:songs] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-04-05 17:32:29.880 INFO  (qtp659590237-25) [   x:songs] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1696222622389370880
+2021-04-05 17:32:29.931 INFO  (searcherExecutor-41-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-05 17:32:29.931 INFO  (searcherExecutor-41-thread-1-processing-x:songs) [   x:songs] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-04-05 17:32:29.936 INFO  (searcherExecutor-41-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 0 ms
+2021-04-05 17:32:29.963 INFO  (qtp659590237-25) [   x:songs] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-04-05 17:32:29.966 INFO  (searcherExecutor-41-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-05 17:32:29.966 INFO  (qtp659590237-25) [   ] o.a.s.c.S.Request [songs]  webapp=/solr path=/schema params={wt=json&_=1617643668076} status=0 QTime=5291
+2021-04-05 17:32:29.966 INFO  (qtp659590237-25) [   ] o.a.s.c.SolrCore [songs]  CLOSING SolrCore org.apache.solr.core.SolrCore@3c04c5e7
+2021-04-05 17:32:29.966 INFO  (qtp659590237-25) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.songs tag=SolrCore@3c04c5e7
+2021-04-05 17:32:29.966 INFO  (qtp659590237-25) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@14cc0f48: rootName = null, domain = solr.core.songs, service url = null, agent id = null] for registry solr.core.songs/com.codahale.metrics.MetricRegistry@4ce70efb
+2021-04-05 17:32:29.971 INFO  (searcherExecutor-41-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 0 ms
+2021-04-05 17:32:31.498 INFO  (qtp659590237-21) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/config params={wt=json&_=1617643668076} status=0 QTime=0
+2021-04-05 17:32:31.500 INFO  (qtp659590237-45) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1617643491552} status=0 QTime=3
+2021-04-05 17:32:31.527 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1617643491552} status=0 QTime=0
+2021-04-05 17:33:11.068 INFO  (qtp659590237-45) [   x:songs] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/conf/managed-schema
+2021-04-05 17:33:11.076 INFO  (qtp659590237-45) [   x:songs] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-04-05 17:33:11.105 INFO  (qtp659590237-45) [   x:songs] o.a.s.s.IndexSchema Schema name=default-config
+2021-04-05 17:33:11.111 WARN  (qtp659590237-45) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-04-05 17:33:11.111 WARN  (qtp659590237-45) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-04-05 17:33:11.111 WARN  (qtp659590237-45) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-04-05 17:33:11.111 WARN  (qtp659590237-45) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-04-05 17:33:11.111 WARN  (qtp659590237-45) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-04-05 17:33:11.128 INFO  (qtp659590237-45) [   x:songs] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-04-05 17:33:11.148 INFO  (qtp659590237-45) [   x:songs] o.a.s.c.CoreContainer Reloading SolrCore 'songs' using configuration from instancedir /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs
+2021-04-05 17:33:11.164 INFO  (qtp659590237-45) [   x:songs] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.songs' (registry 'solr.core.songs') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6e9175d8
+2021-04-05 17:33:11.164 INFO  (qtp659590237-45) [   x:songs] o.a.s.c.SolrCore [[songs] ] Opening new SolrCore at [/Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs], dataDir=[/Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/data/]
+2021-04-05 17:33:16.219 INFO  (qtp659590237-45) [   x:songs] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-04-05 17:33:16.219 INFO  (qtp659590237-45) [   x:songs] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-04-05 17:33:16.222 INFO  (qtp659590237-45) [   x:songs] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/conf
+2021-04-05 17:33:16.223 INFO  (qtp659590237-45) [   x:songs] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-04-05 17:33:16.223 INFO  (qtp659590237-45) [   x:songs] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-04-05 17:33:16.224 INFO  (qtp659590237-45) [   x:songs] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-04-05 17:33:16.224 INFO  (qtp659590237-45) [   x:songs] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1696222670984577024
+2021-04-05 17:33:16.227 INFO  (searcherExecutor-46-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-05 17:33:16.227 INFO  (searcherExecutor-46-thread-1-processing-x:songs) [   x:songs] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-04-05 17:33:16.231 INFO  (searcherExecutor-46-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 0 ms
+2021-04-05 17:33:16.232 INFO  (qtp659590237-45) [   x:songs] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-04-05 17:33:16.234 INFO  (qtp659590237-45) [   ] o.a.s.c.S.Request [songs]  webapp=/solr path=/schema params={wt=json&_=1617643668076} status=0 QTime=5191
+2021-04-05 17:33:16.234 INFO  (searcherExecutor-46-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-05 17:33:16.234 INFO  (qtp659590237-45) [   ] o.a.s.c.SolrCore [songs]  CLOSING SolrCore org.apache.solr.core.SolrCore@2a0559ca
+2021-04-05 17:33:16.234 INFO  (qtp659590237-45) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.songs tag=SolrCore@2a0559ca
+2021-04-05 17:33:16.234 INFO  (qtp659590237-45) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6b535d64: rootName = null, domain = solr.core.songs, service url = null, agent id = null] for registry solr.core.songs/com.codahale.metrics.MetricRegistry@4ce70efb
+2021-04-05 17:33:16.237 INFO  (searcherExecutor-46-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 0 ms
+2021-04-05 17:33:17.767 INFO  (qtp659590237-17) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/config params={wt=json&_=1617643668076} status=0 QTime=2
+2021-04-05 17:33:17.768 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1617643491552} status=0 QTime=5
+2021-04-05 17:33:17.802 INFO  (qtp659590237-21) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1617643491552} status=0 QTime=0
+2021-04-05 17:34:25.765 INFO  (qtp659590237-25) [   x:songs] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/conf/managed-schema
+2021-04-05 17:34:25.773 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-04-05 17:34:25.795 INFO  (qtp659590237-25) [   x:songs] o.a.s.s.IndexSchema Schema name=default-config
+2021-04-05 17:34:25.804 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-04-05 17:34:25.804 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-04-05 17:34:25.804 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-04-05 17:34:25.804 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-04-05 17:34:25.804 WARN  (qtp659590237-25) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-04-05 17:34:25.820 INFO  (qtp659590237-25) [   x:songs] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-04-05 17:34:25.833 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.CoreContainer Reloading SolrCore 'songs' using configuration from instancedir /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs
+2021-04-05 17:34:25.844 INFO  (qtp659590237-25) [   x:songs] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.songs' (registry 'solr.core.songs') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6e9175d8
+2021-04-05 17:34:25.844 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.SolrCore [[songs] ] Opening new SolrCore at [/Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs], dataDir=[/Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/data/]
+2021-04-05 17:34:30.888 INFO  (qtp659590237-25) [   x:songs] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-04-05 17:34:30.888 INFO  (qtp659590237-25) [   x:songs] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-04-05 17:34:30.892 INFO  (qtp659590237-25) [   x:songs] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/conf
+2021-04-05 17:34:30.892 INFO  (qtp659590237-25) [   x:songs] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-04-05 17:34:30.893 INFO  (qtp659590237-25) [   x:songs] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-04-05 17:34:30.894 INFO  (qtp659590237-25) [   x:songs] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-04-05 17:34:30.895 INFO  (qtp659590237-25) [   x:songs] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1696222749282795520
+2021-04-05 17:34:30.898 INFO  (searcherExecutor-51-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-05 17:34:30.898 INFO  (searcherExecutor-51-thread-1-processing-x:songs) [   x:songs] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-04-05 17:34:30.902 INFO  (qtp659590237-25) [   x:songs] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-04-05 17:34:30.903 INFO  (searcherExecutor-51-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 0 ms
+2021-04-05 17:34:30.904 INFO  (qtp659590237-25) [   ] o.a.s.c.S.Request [songs]  webapp=/solr path=/schema params={wt=json&_=1617643668076} status=0 QTime=5165
+2021-04-05 17:34:30.904 INFO  (searcherExecutor-51-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-05 17:34:30.905 INFO  (qtp659590237-25) [   ] o.a.s.c.SolrCore [songs]  CLOSING SolrCore org.apache.solr.core.SolrCore@667592d2
+2021-04-05 17:34:30.905 INFO  (qtp659590237-25) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.songs tag=SolrCore@667592d2
+2021-04-05 17:34:30.905 INFO  (qtp659590237-25) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@26a94c00: rootName = null, domain = solr.core.songs, service url = null, agent id = null] for registry solr.core.songs/com.codahale.metrics.MetricRegistry@4ce70efb
+2021-04-05 17:34:30.907 INFO  (searcherExecutor-51-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 0 ms
+2021-04-05 17:34:32.431 INFO  (qtp659590237-45) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/config params={wt=json&_=1617643668076} status=0 QTime=0
+2021-04-05 17:34:32.432 INFO  (qtp659590237-21) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1617643491552} status=0 QTime=3
+2021-04-05 17:34:32.461 INFO  (qtp659590237-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1617643491552} status=0 QTime=0
+2021-04-05 17:36:48.093 INFO  (qtp659590237-17) [   x:songs] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/conf/managed-schema
+2021-04-05 17:36:48.102 INFO  (qtp659590237-17) [   x:songs] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-04-05 17:36:48.168 INFO  (qtp659590237-17) [   x:songs] o.a.s.s.IndexSchema Schema name=default-config
+2021-04-05 17:36:48.194 WARN  (qtp659590237-17) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-04-05 17:36:48.195 WARN  (qtp659590237-17) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-04-05 17:36:48.197 WARN  (qtp659590237-17) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-04-05 17:36:48.206 WARN  (qtp659590237-17) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-04-05 17:36:48.206 WARN  (qtp659590237-17) [   x:songs] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-04-05 17:36:48.283 INFO  (qtp659590237-17) [   x:songs] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-04-05 17:36:48.312 INFO  (qtp659590237-17) [   x:songs] o.a.s.c.CoreContainer Reloading SolrCore 'songs' using configuration from instancedir /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs
+2021-04-05 17:36:48.378 INFO  (qtp659590237-17) [   x:songs] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.songs' (registry 'solr.core.songs') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6e9175d8
+2021-04-05 17:36:48.378 INFO  (qtp659590237-17) [   x:songs] o.a.s.c.SolrCore [[songs] ] Opening new SolrCore at [/Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs], dataDir=[/Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/data/]
+2021-04-05 17:36:53.492 INFO  (qtp659590237-17) [   x:songs] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-04-05 17:36:53.493 INFO  (qtp659590237-17) [   x:songs] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-04-05 17:36:53.498 INFO  (qtp659590237-17) [   x:songs] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/laksh/Desktop/Projects/Sentiment-Song-Search/solr/server/solr/songs/conf
+2021-04-05 17:36:53.498 INFO  (qtp659590237-17) [   x:songs] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-04-05 17:36:53.498 INFO  (qtp659590237-17) [   x:songs] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-04-05 17:36:53.500 INFO  (qtp659590237-17) [   x:songs] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-04-05 17:36:53.500 INFO  (qtp659590237-17) [   x:songs] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1696222898814976000
+2021-04-05 17:36:53.502 INFO  (searcherExecutor-56-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-05 17:36:53.502 INFO  (searcherExecutor-56-thread-1-processing-x:songs) [   x:songs] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-04-05 17:36:53.506 INFO  (searcherExecutor-56-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 0 ms
+2021-04-05 17:36:53.506 INFO  (qtp659590237-17) [   x:songs] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-04-05 17:36:53.508 INFO  (qtp659590237-17) [   ] o.a.s.c.S.Request [songs]  webapp=/solr path=/schema params={wt=json&_=1617643668076} status=0 QTime=5454
+2021-04-05 17:36:53.508 INFO  (qtp659590237-17) [   ] o.a.s.c.SolrCore [songs]  CLOSING SolrCore org.apache.solr.core.SolrCore@56532403
+2021-04-05 17:36:53.508 INFO  (searcherExecutor-56-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-05 17:36:53.508 INFO  (qtp659590237-17) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.songs tag=SolrCore@56532403
+2021-04-05 17:36:53.508 INFO  (qtp659590237-17) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@353e6420: rootName = null, domain = solr.core.songs, service url = null, agent id = null] for registry solr.core.songs/com.codahale.metrics.MetricRegistry@4ce70efb
+2021-04-05 17:36:53.511 INFO  (searcherExecutor-56-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 0 ms
+2021-04-05 17:36:55.149 INFO  (qtp659590237-20) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1617643491552} status=0 QTime=6
+2021-04-05 17:36:55.157 INFO  (qtp659590237-21) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/config params={wt=json&_=1617643668076} status=0 QTime=0
+2021-04-05 17:36:55.179 INFO  (qtp659590237-17) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1617643491552} status=0 QTime=0
