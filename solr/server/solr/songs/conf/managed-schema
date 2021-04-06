@@ -477,6 +477,7 @@
   <field name="_text_" type="text_general" multiValued="true" indexed="true" stored="false"/>
   <field name="_version_" type="plong" indexed="false" stored="false"/>
   <field name="artist" type="name" uninvertible="false" indexed="true" stored="true"/>
+  <field name="artist_details" type="text_general" uninvertible="false" indexed="false" stored="true"/>
   <field name="date" type="string" uninvertible="false" indexed="false" stored="true"/>
   <field name="explicit_rating" type="pint" uninvertible="false" indexed="false" stored="true"/>
   <field name="genre" type="string" uninvertible="false" indexed="true" stored="true"/>
