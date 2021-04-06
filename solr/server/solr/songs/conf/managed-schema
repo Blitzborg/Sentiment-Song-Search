@@ -62,18 +62,6 @@
       <filter class="solr.LowerCaseFilterFactory"/>
     </analyzer>
   </fieldType>
-  <fieldType name="name" class="solr.TextField">
-    <analyzer type="index">
-      <tokenizer class="solr.StandardTokenizerFactory"/>
-      <filter class="solr.LowerCaseFilterFactory"/>
-      <filter class="solr.BeiderMorseFilterFactory" nameType="GENERIC" languageSet="auto" ruleType="APPROX" concat="true"/>
-    </analyzer>
-    <analyzer type="query">
-      <tokenizer class="solr.StandardTokenizerFactory"/>
-      <filter class="solr.LowerCaseFilterFactory"/>
-      <filter class="solr.BeiderMorseFilterFactory" nameType="GENERIC" languageSet="auto" ruleType="APPROX" concat="true"/>
-    </analyzer>
-  </fieldType>
   <fieldType name="pdate" class="solr.DatePointField" docValues="true"/>
   <fieldType name="pdates" class="solr.DatePointField" docValues="true" multiValued="true"/>
   <fieldType name="pdouble" class="solr.DoublePointField" docValues="true"/>
@@ -477,7 +465,7 @@
   <field name="_root_" type="string" docValues="false" indexed="true" stored="false"/>
   <field name="_text_" type="text_general" multiValued="true" indexed="true" stored="false"/>
   <field name="_version_" type="plong" indexed="false" stored="false"/>
-  <field name="artist" type="name" uninvertible="false" indexed="true" stored="true"/>
+  <field name="artist" type="text_general" uninvertible="false" indexed="true" stored="true"/>
   <field name="artist_details" type="text_general" uninvertible="false" indexed="false" stored="true"/>
   <field name="date" type="string" uninvertible="false" indexed="false" stored="true"/>
   <field name="explicit_rating" type="pint" uninvertible="false" indexed="false" stored="true"/>
