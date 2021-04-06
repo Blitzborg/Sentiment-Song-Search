@@ -360,3 +360,24 @@
 2021-04-06 13:09:36.405 INFO  (qtp949767857-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=*:*&_=1617713080234} hits=10005 status=0 QTime=99
 2021-04-06 13:11:20.531 INFO  (qtp949767857-16) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=song_name:"hello"&_=1617713080234} hits=10 status=0 QTime=29
 2021-04-06 13:11:34.306 INFO  (qtp949767857-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=song_name:"shape+of+you"&_=1617713080234} hits=3 status=0 QTime=33
+2021-04-06 13:14:21.366 INFO  (qtp949767857-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=song_name:"shape+of+you"&rows=100&_=1617713080234} hits=3 status=0 QTime=1
+2021-04-06 13:14:30.525 INFO  (qtp949767857-16) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=*:*&rows=100&_=1617713080234} hits=10005 status=0 QTime=14
+2021-04-06 13:15:57.437 INFO  (qtp949767857-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=song_name:"shape+of+you"&rows=100&_=1617713080234} hits=3 status=0 QTime=1
+2021-04-06 13:16:06.236 INFO  (qtp949767857-16) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=song_name:"niggas+in+paris"&rows=100&_=1617713080234} hits=0 status=0 QTime=1
+2021-04-06 13:16:10.659 INFO  (qtp949767857-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=song_name:"in+paris"&rows=100&_=1617713080234} hits=2 status=0 QTime=2
+2021-04-06 13:16:20.321 INFO  (qtp949767857-16) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=song_name:"grenade"&rows=100&_=1617713080234} hits=2 status=0 QTime=1
+2021-04-06 13:18:23.917 INFO  (qtp949767857-23) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=song_name:"shape+of+you"&rows=100&_=1617713080234} hits=3 status=0 QTime=1
+2021-04-06 13:18:46.366 INFO  (qtp949767857-21) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=song_name:"shape+of+you"+AND+sentiment:"positive"&rows=100&_=1617713080234} hits=2 status=0 QTime=23
+2021-04-06 13:18:50.471 INFO  (qtp949767857-23) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=song_name:"shape+of+you"&rows=100&_=1617713080234} hits=3 status=0 QTime=1
+2021-04-06 13:18:58.010 INFO  (qtp949767857-21) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=song_name:"shape+of+you"+AND+sentiment:"positive"&rows=100&_=1617713080234} hits=2 status=0 QTime=1
+2021-04-06 13:27:43.786 INFO  (qtp949767857-24) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=artist:"one+republic"+AND+sentiment:"positive"&rows=100&_=1617713080234} hits=0 status=0 QTime=153
+2021-04-06 13:27:47.971 INFO  (qtp949767857-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=artist:"one+republic"&rows=100&_=1617713080234} hits=0 status=0 QTime=4
+2021-04-06 13:28:05.356 INFO  (qtp949767857-49) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=artist:"adele"&rows=100&_=1617713080234} hits=0 status=0 QTime=12
+2021-04-06 13:28:25.584 INFO  (qtp949767857-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=song_name:"secrets"&rows=100&_=1617713080234} hits=3 status=0 QTime=2
+2021-04-06 13:34:21.465 INFO  (qtp949767857-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1617716061010} status=0 QTime=0
+2021-04-06 13:34:21.474 INFO  (qtp949767857-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1617716061010} status=0 QTime=8
+2021-04-06 13:34:22.634 INFO  (qtp949767857-49) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=*:*&_=1617716061315} hits=10005 status=0 QTime=0
+2021-04-06 13:35:33.191 INFO  (searcherExecutor-61-thread-1-processing-x:songs) [   x:songs] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-04-06 13:35:33.194 INFO  (searcherExecutor-61-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 0 ms
+2021-04-06 13:35:33.241 INFO  (qtp949767857-23) [   x:songs] o.a.s.u.p.LogUpdateProcessorFactory [songs]  webapp=/solr path=/update params={commit=true}{deleteByQuery=*:* (-1696298311902822400),commit=} 0 222
+2021-04-06 13:35:37.783 INFO  (qtp949767857-16) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=*:*&_=1617716061315} hits=0 status=0 QTime=2

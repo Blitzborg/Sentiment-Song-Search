@@ -75,9 +75,11 @@ curl -X POST -H 'Content-type:application/json' --data-binary '{
 
 curl -X POST -H 'Content-type:application/json' --data-binary '{
   "replace-field":{
-     "name":"lyrics",
-     "type":"lyrics",
+     "name":"artist",
+     "type":"text_general",
      "stored":true,
 	 "indexed":true,
 	 "uninvertible":false }
 }' http://localhost:8983/solr/songs/schema
+
+http://localhost:8983/solr/songs/update?stream.body=<delete><query>*:*</query></delete>&commit=true
