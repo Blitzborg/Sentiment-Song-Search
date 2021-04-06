@@ -1,0 +1,83 @@
+curl -X POST -H 'Content-type:application/json' --data-binary '{
+  "add-field-type":{
+     "name":"name",
+     "class":"solr.TextField",
+     "indexAnalyzer":{
+        "tokenizer":{
+           "class":"solr.StandardTokenizerFactory" 
+		},
+		"filters":[
+		{"class":"solr.LowerCaseFilterFactory"
+		},
+		{"class":"solr.BeiderMorseFilterFactory",
+		   "nameType":"GENERIC",
+		   "ruleType":"APPROX",
+			"concat":"true",
+			"languageSet":"auto" 
+		}
+		]
+	},
+     "queryAnalyzer":{
+        "tokenizer":{
+           "class":"solr.StandardTokenizerFactory" 
+		},
+		"filters":[
+		{"class":"solr.LowerCaseFilterFactory"
+		},
+		{"class":"solr.BeiderMorseFilterFactory",
+		   "nameType":"GENERIC",
+		   "ruleType":"APPROX",
+			"concat":"true",
+			"languageSet":"auto" 
+		}
+		]
+	}
+}
+}' http://localhost:8983/solr/songs/schema
+
+
+
+
+curl -X POST -H 'Content-type:application/json' --data-binary '{
+  "add-field-type":{
+     "name":"lyrics",
+     "class":"solr.TextField",
+     "indexAnalyzer":{
+        "tokenizer":{
+           "class":"solr.StandardTokenizerFactory" 
+		},
+		"filters":[
+		{"class":"solr.ASCIIFoldingFilterFactory"
+		},
+        {"class":"solr.PatternReplaceFilterFactory",
+		"pattern":"\[(.*?)\]",
+		"replacement":""
+		},
+		{"class":"solr.ClassicFilterFactory"
+		},
+		{"class":"solr.LowerCaseFilterFactory"
+		}
+		]
+	},
+     "queryAnalyzer":{
+        "tokenizer":{
+           "class":"solr.StandardTokenizerFactory" 
+		},
+		"filters":[
+		{"class":"solr.LowerCaseFilterFactory"
+		}
+		]
+	}
+}
+}' http://localhost:8983/solr/songs/schema
+
+
+
+curl -X POST -H 'Content-type:application/json' --data-binary '{
+  "replace-field":{
+     "name":"lyrics",
+     "type":"lyrics",
+     "stored":true,
+	 "indexed":true,
+	 "uninvertible":false }
+}' http://localhost:8983/solr/songs/schema
