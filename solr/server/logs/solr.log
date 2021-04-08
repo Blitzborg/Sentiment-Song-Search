@@ -1218,3 +1218,4 @@
 2021-04-08 07:29:56.232 INFO  (searcherExecutor-51-thread-1-processing-x:songs) [   x:songs] o.a.s.c.SolrCore [songs]  Registered new searcher autowarm time: 0 ms
 2021-04-08 07:29:56.237 INFO  (qtp949767857-21) [   x:songs] o.a.s.u.p.LogUpdateProcessorFactory [songs]  webapp=/solr path=/update params={commit=true}{commit=} 0 3635
 2021-04-08 07:30:03.609 INFO  (qtp949767857-25) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=lyrics:"im+in+love+with+the+shape+of+you"&_=1617866988142} hits=3 status=0 QTime=7
+2021-04-08 07:34:07.264 INFO  (qtp949767857-23) [   x:songs] o.a.s.c.S.Request [songs]  webapp=/solr path=/select params={q=lyrics:"im+in+love+with+the+shape+of+you"} hits=3 status=0 QTime=1
