@@ -55,10 +55,12 @@
       <filter class="solr.ASCIIFoldingFilterFactory"/>
       <filter class="solr.PatternReplaceFilterFactory" pattern="[(.*?)]" replacement=""/>
       <filter class="solr.ClassicFilterFactory"/>
+      <filter class="solr.PatternReplaceFilterFactory" pattern="[',-.]" replacement=""/>
       <filter class="solr.LowerCaseFilterFactory"/>
     </analyzer>
     <analyzer type="query">
       <tokenizer class="solr.StandardTokenizerFactory"/>
+      <filter class="solr.PatternReplaceFilterFactory" pattern="[',-.]" replacement=""/>
       <filter class="solr.LowerCaseFilterFactory"/>
     </analyzer>
   </fieldType>
