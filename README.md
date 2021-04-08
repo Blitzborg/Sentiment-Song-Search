@@ -55,5 +55,3 @@ Run the following command and the client will be available at http://127.0.0.1:8
 cd client
 streamlit run app.py
 ```
-
-curl -X POST -H 'Content-type:application/json' --data-binary '{ "replace-field-type":{ "name":"lyrics", "class":"solr.TextField", "indexAnalyzer":{ "tokenizer":{ "class":"solr.StandardTokenizerFactory" }, "filters":[ {"class":"solr.ASCIIFoldingFilterFactory" }, {"class":"solr.PatternReplaceFilterFactory", "pattern":"\[(.*?)\]", "replacement":"" }, {"class":"solr.ClassicFilterFactory" }, {"class":"solr.PatternReplaceFilterFactory", "pattern":"['\'',-.]", "replacement":"" }, {"class":"solr.LowerCaseFilterFactory" } ] }, "queryAnalyzer":{ "tokenizer":{ "class":"solr.StandardTokenizerFactory" }, "filters":[ {"class":"solr.PatternReplaceFilterFactory", "pattern":"['\'',-.]", "replacement":"" }, {"class":"solr.LowerCaseFilterFactory" } ] } } }' http://localhost:8983/solr/songs/schema
