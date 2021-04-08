@@ -52,5 +52,6 @@ pip install -r requirements.txt
 Run the following command and the client will be available at http://127.0.0.1:8051:
 
 ```shell
+cd client
 streamlit run app.py
 ```
