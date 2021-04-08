@@ -7,7 +7,7 @@ from typing_extensions import final
 import json
 import emoji
 import base64
-
+import time
 
 st.title(emoji.emojize(':musical_note: SongGenius :musical_note:'))
 img = Image.open('landing_image.jpg')
@@ -33,15 +33,18 @@ check_artist = st.sidebar.checkbox('Artist')
 check_lyrics = st.sidebar.checkbox('Lyrics')
 check_genre = st.sidebar.checkbox('Genre')
 
-st.sidebar.header(emoji.emojize('For nerds :computer:'))
+num_results = st.sidebar.slider(
+    "How many results would you like to see?", min_value=1, max_value=50, value=10)
+
+st.sidebar.header(emoji.emojize('For nerds :nerd_face:'))
 
 if check_sn is True:
     '''## Select by Song'''
     song_input = st.text_input('E.g. Shape of you')
 if check_sentiment is True:
     '''## Select by Sentiment'''
-    sentiment_input = st.selectbox('How do you feel today?', options=[
-                                   "Happy", "Just Okay", "Sad"])
+    sentiment_input = st.selectbox('What kind of songs would you like to hear?', options=[
+                                   "Happy", "Sad", "Anything is fine!"])
 if check_lyrics is True:
     '''## Select by Lyrics'''
     lyrics_input = st.text_area('E.g. I\'m in love with the shape of you ')
@@ -51,7 +54,7 @@ if check_artist is True:
 if check_genre is True:
     '''## Select by Genre'''
     genre_input = st.selectbox('Tip: Select one of the dropdown below', options=['', 'Acoustic Blues', 'Alternative', 'Alternative Country', 'Americana', 'Bluegrass', 'Blues-Rock', 'British Invasion', 'College Rock', 'Comedy', 'Contemporary Country', 'Contemporary R&B', 'Country', 'Electronic', 'Grunge', 'Hardcore', 'Hip-Hop', 'Hip-Hop/Rap', 'House', 'Indian Pop',
-                                                                                     'Inspirational', 'Jazz', 'K-Pop', 'Latin', 'Metal', 'Misc', 'Outlaw Country', "Pop", 'Pop/Rock', 'Prog-Rock/Art Rock', 'Punk', 'R&B', 'R&B/Soul', 'Rap', 'Reggae', 'Reggaeton y Hip-Hop', 'Rock', 'Rock & Roll', 'Salsa & Tropical', 'Singer/Songwriter', 'Soul', 'Southern Rock', 'Teen Pop', 'Traditional Country', 'Vocal Jazz', 'World/International', 'World/Reggae'])
+                                                                                     'Inspirational', 'Jazz', 'Latin', 'Metal', 'Misc', 'Outlaw Country', "Pop", 'Pop/Rock', 'Prog-Rock/Art Rock', 'Punk', 'R&B', 'R&B/Soul', 'Rap', 'Reggae', 'Reggaeton y Hip-Hop', 'Rock', 'Rock & Roll', 'Salsa & Tropical', 'Singer/Songwriter', 'Soul', 'Southern Rock', 'Teen Pop', 'Traditional Country', 'Vocal Jazz', 'World/International', 'World/Reggae'])
 
 submit = st.button("Search")
 # results = st.sidebar.slider(
@@ -61,7 +64,7 @@ principal_graphs_checkbox1 = st.sidebar.checkbox('Dashboard Analytics')
 genre_dict = {
     "Inspirational": "Inspirational",
     "Jazz": "Jazz",
-    "K-Pop": "K-Pop",
+
     "Latin": "Latin",
     "Metal": "Metal",
     "Misc": "Misc",
@@ -101,6 +104,10 @@ def listToString(list_of_strings):
     return final_string
 
 
+start_time = 0
+end_time = 0
+
+
 def generateCards(search_by, jsonObject, type, submit=submit):
     # if len(search_by) > 0 and submit == True:
     if search_by > 0 and submit == True:
@@ -108,9 +115,18 @@ def generateCards(search_by, jsonObject, type, submit=submit):
         st.write("{} result(s) found".format(result_size))
 
         for i in range(result_size):
+            lyric_text = "No lyrics found"
+            exp_rating = "No rating found"
+            about_artist = "No artist data available"
             color = ""
             yt_link = jsonObject[i]["link"]
             sentiment_final = jsonObject[i]["sentiment"]
+            if("lyrics" in jsonObject[i]):
+                lyric_text = jsonObject[i]["lyrics"].replace("\n", "<br />")
+                exp_rating = jsonObject[i]["explicit_rating"]
+            if("artist_details" in jsonObject[i]):
+                about_artist = jsonObject[i]["artist_details"][0].replace(
+                    "\n", "<br />")
             if(sentiment_final == "positive"):
                 color = "green"
             elif(sentiment_final == "neutral"):
@@ -173,7 +189,9 @@ def generateCards(search_by, jsonObject, type, submit=submit):
                             <div class="modal-body">
                                 {lyrics}
                             </div>
-                            
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
                             </div>
                         </div>
                         </div>
@@ -200,6 +218,10 @@ def generateCards(search_by, jsonObject, type, submit=submit):
                                 </button>
                             </div>
                             <div class="modal-body">{artist_deets}</div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                
+                            </div>
                             </div>
                         </div>
                         </div>
@@ -214,9 +236,11 @@ def generateCards(search_by, jsonObject, type, submit=submit):
                     </div>
                 </div>
                 </div>
-                """.format(artist_name=str(jsonObject[i]["_artist"][0]), artist_song=str(jsonObject[i]["song_name"][0]), yt_link=final_link, artist_deets=jsonObject[i]["artist_details"][0], exp_rating=jsonObject[i]["explicit_rating"], sentiment=sentiment_final, genre=jsonObject[i]["genre"], lyrics=jsonObject[i]["lyrics"], original_link=jsonObject[i]["link"], color=color),
-                height=300,
+                """.format(artist_name=str(jsonObject[i]["_artist"][0]), artist_song=str(jsonObject[i]["song_name"][0]), yt_link=final_link, artist_deets=about_artist, exp_rating=exp_rating, sentiment=sentiment_final, genre=jsonObject[i]["genre"], lyrics=lyric_text, original_link=jsonObject[i]["link"], color=color),
+                height=302,
             )
+    end_time = time.time()
+    print(end_time - start_time)
 
 
 dict_searchCriteria = {
@@ -229,7 +253,7 @@ dict_searchCriteria = {
 
 dict_sentiments = {
     "Happy": "positive",
-    "Just Okay": "neutral",
+    "Anything is fine!": "neutral",
     "Sad": "negative"
 }
 ###### backend api interaction ########
@@ -255,6 +279,9 @@ if(submit is True):
                 url += value[1] + "%3A%22" + selection + "%22"
 
             elif(key == "genre"):
+                i += 1
+                if(i > 1):
+                    url += "%20AND%20"
                 url += value[1] + "%3A%22"
                 genre_query = ""
                 if(value[2] not in genre_dict.keys()):
@@ -264,11 +291,11 @@ if(submit is True):
                 else:
                     genre_query = genre_dict[genre_input]
                 url += genre_query + "%22"
-
+    url += "&rows={}".format(num_results)
+    start_time = time.time()
     response = requests.get(url)
 
     json_response = json.loads(response.text)
-    # st.header(url)
     # fix the search_by parameter in generateCards
     generateCards(1, json_response["response"]["docs"], submit)
     i = 0
