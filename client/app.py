@@ -47,7 +47,7 @@ if check_sentiment is True:
                                    "Happy", "Sad", "Anything is fine!"])
 if check_lyrics is True:
     '''## Select by Lyrics'''
-    lyrics_input = st.text_area('E.g. I\'m in love with the shape of you ')
+    lyrics_input = st.text_area('E.g. im in love with the shape of you ')
 if check_artist is True:
     '''## Select by Artist'''
     artist_input = st.text_input('E.g. Ed Sheeran')
