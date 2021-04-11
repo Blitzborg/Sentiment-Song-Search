@@ -26,7 +26,7 @@ Now queries to the database can be made by first selecting **Core Selector > son
 
 ## Data crawling
 
-upload the data_collection notebooks on Google Colab
+Upload the data_collection notebooks on Google Colab
 
 Click on each cell and press shift + enter to run
 
