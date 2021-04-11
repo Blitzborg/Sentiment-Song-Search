@@ -26,10 +26,13 @@ def setup():
 
 def tokenise(corpus):
   filtered_sentence = [] 
-  corpus = corpus.lower()
+  corpus = str(corpus)
+  encoded_string = corpus.encode("ascii", "ignore")
+  decode_string = encoded_string.decode()
   word_tokens = tokenizer.tokenize(corpus) 
-  filtered_sentence = [w for w in word_tokens if not w in stop_words]  
-  return filtered_sentence
+  # corpus = corpus.lower()
+  # filtered_sentence = [w for w in word_tokens if not w in stop_words]  
+  return word_tokens
 
 def map_book(tokens):
     hash_map = {}
@@ -84,8 +87,15 @@ def generate_rating(corpus):
   return (tot, exp_tot)
 
 setup()
-corpus = load_corpus(os.curdir + '/look_at_me_now.txt')
-(tot, exp_tot) = generate_rating(corpus)
 
-print("Explicit Rating: "+ str(exp_tot/tot * 400 ) if  (exp_tot/tot * 400 < 100) else str(100.00) + '%')
+rating = []
+for i in tqdm(df['Lyrics']):
+  # corpus = load_corpus()
+
+  (tot, exp_tot) = generate_rating(i)
+  rating.append(round((exp_tot/tot * 400 )) if  (exp_tot/tot * 400 < 100) else 100)
+
+df['Explicit Rating'] = rating
+
+df.to_csv('With_Explicit_Rating.csv', index= False)
 
