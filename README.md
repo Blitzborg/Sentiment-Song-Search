@@ -1,5 +1,19 @@
 # Sentiment-Song-Search
 
+## Data crawling
+
+#### data_collection.ipynb
+
+Fetches for all song data like lyrics, artist info, etc
+
+#### Song_data_prep.ipynb
+
+For cleaning lyrics by removing info like [Verse 1], [Intro ], [Chorus ] etc.
+
+Upload the data_collection notebooks on Google Colab
+
+Click on each cell and press shift + enter to run
+
 ## Explicit Word Rating 
 
 Install nltk library for python
