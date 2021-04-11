@@ -12,7 +12,7 @@ For cleaning lyrics by removing info like [Verse 1], [Intro ], [Chorus ] etc.
 
 Upload the data_collection notebooks on Google Colab
 
-Click on each cell and press shift + enter to run
+Click on each cell and press `Shift` + `Enter` to run
 
 ## Explicit Word Rating 
 
