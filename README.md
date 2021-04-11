@@ -24,6 +24,12 @@ To access the Solr admin dashboard, visit [http://localhost:8983/solr](http://lo
 
 Now queries to the database can be made by first selecting **Core Selector > songs** and then clicking on the **Query** tab.
 
+## Data crawling
+
+upload the data_collection notebooks on Google Colab
+
+Click on each cell and press shift + enter to run
+
 ## Client
 
 ### Setup
