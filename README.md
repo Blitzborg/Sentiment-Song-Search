@@ -26,6 +26,14 @@ Now queries to the database can be made by first selecting **Core Selector > son
 
 ## Data crawling
 
+#### data_collection.ipynb
+
+Fetches for all song data like lyrics, artist info, etc
+
+#### Song_data_prep.ipynb
+
+For cleaning lyrics by removing info like [Verse 1], [Intro ], [Chorus ] etc.
+
 Upload the data_collection notebooks on Google Colab
 
 Click on each cell and press shift + enter to run
