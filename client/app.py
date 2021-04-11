@@ -44,7 +44,7 @@ if check_sn is True:
 if check_sentiment is True:
     '''## Select by Sentiment'''
     sentiment_input = st.selectbox('What kind of songs would you like to hear?', options=[
-                                   "Happy", "Sad", "Anything is fine!"])
+                                   "Happy", "Sad", "Somewhere in the middle"])
 if check_lyrics is True:
     '''## Select by Lyrics'''
     lyrics_input = st.text_area('E.g. im in love with the shape of you ')
@@ -60,6 +60,45 @@ submit = st.button("Search")
 # results = st.sidebar.slider(
 #    "Show top results", min_value=1, max_value=50, step=1)
 principal_graphs_checkbox1 = st.sidebar.checkbox('Dashboard Analytics')
+
+if principal_graphs_checkbox1 is True:
+    st.header(emoji.emojize(':bar_chart: Dashboard analytics'))
+    st.write(
+        emoji.emojize(":chart_with_upwards_trend: Evolution of trends and Year-wise sentiment ratio :performing_arts: "))
+    '''This portion does shows the evolution of trends of the songs over time'''
+    st.write(
+        "[Tip]: Click on the top right arrows to expand a graph")
+    col1, col2 = st.beta_columns(2)
+    with col1:
+        img1 = Image.open('Graph1.png')
+        col1.image(img1, use_column_width=True)
+        img2 = Image.open('Graph2.png')
+        col1.image(img2, use_column_width=True)
+        img3 = Image.open('Graph3.png')
+        col1.image(img3, use_column_width=True)
+        img6 = Image.open('Graph6.png')
+        col1.image(img6, use_column_width=True)
+        img10 = Image.open('Graph10.png')
+        col1.image(img10, use_column_width=True)
+
+    with col2:
+        img4 = Image.open('Graph4.png')
+        col2.image(img4, use_column_width=True)
+        img5 = Image.open('Graph5.png')
+        col2.image(img5, use_column_width=True)
+        img8 = Image.open('Graph8.png')
+        col2.image(img8, use_column_width=True)
+        img9 = Image.open('Graph9.png')
+        col2.image(img9, use_column_width=True)
+        img11 = Image.open('Graph11.png')
+        col2.image(img11, use_column_width=True)
+
+    year_input = st.selectbox('Please select the year to view positive/negative sentiment ratio:', options=('2005', '2006',
+                                                                                                            '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'))
+    for i in range(2005, 2021):
+        if int(year_input) == i:
+            image_name = str(i) + str('.png')
+            img2005 = st.image(image_name)
 
 genre_dict = {
     "Inspirational": "Inspirational",
@@ -253,7 +292,7 @@ dict_searchCriteria = {
 
 dict_sentiments = {
     "Happy": "positive",
-    "Anything is fine!": "neutral",
+    "Somewhere in the middle": "neutral",
     "Sad": "negative"
 }
 ###### backend api interaction ########
