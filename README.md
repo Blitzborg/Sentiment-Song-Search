@@ -30,7 +30,7 @@ python explicit_word_removal.py
 ```
 ## Sentiment Analysis
 
-Run the jupyter notebooks in the sentiment analysis folder in the order
+Run the jupyter notebooks in the sentiment analysis folder on google colab in the order
  - data_analysis_and_preprocessing.ipynb
  - sentiment_analysis_ouput_generation.ipynb
 
