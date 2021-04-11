@@ -87,7 +87,7 @@ def generate_rating(corpus):
   return (tot, exp_tot)
 
 setup()
-
+df = pd.read_csv('/content/Song_data_prep-L.csv')
 rating = []
 for i in tqdm(df['Lyrics']):
   # corpus = load_corpus()
