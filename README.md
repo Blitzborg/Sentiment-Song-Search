@@ -1,5 +1,9 @@
 # Sentiment-Song-Search
 
+## Project Report
+
+For the project report, refer to Report.pdf
+
 ## Data crawling
 
 #### data_collection.ipynb
