@@ -2,7 +2,7 @@
 
 ## Project Report
 
-For the project report, refer to Report.pdf
+For the project report that was submitted, refer to Report.pdf
 
 ## Data crawling
 
